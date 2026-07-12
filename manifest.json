@@ -1,0 +1,30 @@
+{
+	"manifest_version": 3,
+	"name": "Haus Search - Quick Add",
+	"version": "1.0.0",
+	"description": "Quickly add property leads to your Haus Search from real estate websites",
+	"permissions": ["storage", "activeTab", "scripting", "tabs"],
+	"host_permissions": [
+		"https://www.rightmove.co.uk/*",
+		"https://www.zoopla.co.uk/*",
+		"<all_urls>"
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://www.rightmove.co.uk/*", "*://www.zoopla.co.uk/*"],
+			"js": ["content.js"]
+		}
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_popup": "popup.html",
+		"default_title": "Haus Search - Quick Add"
+	},
+	"icons": {
+		"16": "images/icon-16.png",
+		"48": "images/icon-48.png",
+		"128": "images/icon-128.png"
+	}
+}
