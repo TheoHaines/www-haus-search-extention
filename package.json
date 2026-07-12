@@ -1,0 +1,29 @@
+{
+  "name": "www-template",
+  "version": "1.0.0",
+  "description": "template nodejs site",
+  "homepage": "https://github.com/obsoletedevgit/www-template#readme",
+  "bugs": {
+    "url": "https://github.com/obsoletedevgit/www-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obsoletedevgit/www-template.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
